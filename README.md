@@ -1,6 +1,3 @@
-# Fitness-Guide-Django
-A fitness guide website built with Django
-
 # Fitness Guide (Django)
 
 A modern fitness guide web application built using Django.
