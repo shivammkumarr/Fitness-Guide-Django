@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<div class="hero">
+
+<h1>Fitness Guide</h1>
+
+<p>Build Strength • Lose Fat • Gain Muscle</p>
+
+<p>Your complete guide to fitness, workouts, and nutrition.</p>
+
+</div>
+
+<!-- GOALS SECTION -->
+<section>
+
+<h2>Choose Your Fitness Goal</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="{% static 'images/fatlossfitnessguide1.png' %}">
+<h3>Fat Loss</h3>
+<p>Learn how to lose body fat with proper calorie deficit and workouts.</p>
+<a class="glow-btn" href="{% url 'fat_loss' %}">Learn More</a>
+</div>
+
+<div class="card">
+<img src="{% static 'images/musclegain fitnessguide.png' %}">
+<h3>Muscle Gain</h3>
+<p>Build strong muscles with training and high protein diet.</p>
+<a class="glow-btn" href="{% url 'muscle_gain' %}">Learn More</a>
+</div>
+
+<div class="card">
+<img src="{% static 'images/weightgain fitness guide.png' %}">
+<h3>Weight Gain</h3>
+<p>Healthy weight gain with calorie surplus and strength training.</p>
+<a class="glow-btn" href="{% url 'weight_gain' %}">Learn More</a>
+</div>
+
+<div class="card">
+<img src="{% static 'images/Supplements1.png' %}">
+<h3>Supplements</h3>
+<p>Learn about creatine, protein and essential supplements.</p>
+<a class="glow-btn" href="{% url 'supplements' %}">Learn More</a>
+</div>
+
+</div>
+
+</section>
+
+<hr>
+
+<!-- EXERCISES SECTION -->
+<section>
+
+<h2>Exercise Categories</h2>
+
+<p style="text-align:center;">
+See All Main Exercises of Every Body Part 👉
+<a href="{% url 'exercises' %}" style="color:#00ff88;">CLICK HERE</a>
+</p>
+
+<ul>
+<li>Chest Exercises</li>
+<li>Back Exercises</li>
+<li>Shoulder Exercises</li>
+<li>Biceps Exercises</li>
+<li>Triceps Exercises</li>
+<li>Leg Exercises</li>
+<li>Abs Exercises</li>
+</ul>
+
+</section>
+
+<hr>
+
+<!-- MOTIVATION SECTION -->
+<section>
+
+<h2>Motivation</h2>
+
+<p>"The only bad workout is the one you didn't do."</p>
+
+<p>
+Consistency and discipline are the keys to achieving your fitness goals.
+Start today and build the best version of yourself.
+</p>
+
+<p>
+<a href="https://www.calculator.net/calorie-calculator.html" target="_blank" style="color:#00ff88;">
+Calorie Calculator – Calculate your maintenance calories here !
+</a>
+</p>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Guide</title>
+</head>
+
+<body>
+
+<nav>
+    <a href="/">Home</a> |
+    <a href="/fat-loss/">Fat Loss</a> |
+    <a href="/muscle-gain/">Muscle Gain</a> |
+    <a href="/weight-gain/">Weight Gain</a> |
+    <a href="/exercises/">Exercises</a> |
+    <a href="{% url 'supplements' %}">Supplements</a> |
+</nav>
+
+<hr>
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>
